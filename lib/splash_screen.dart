@@ -29,10 +29,17 @@ class _SplashScreenState extends State<SplashScreen> {
         alignment: Alignment.center,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Icon(Icons.language, size: 80, color: Colors.white),
-            SizedBox(height: 20),
-            Text(
+          children: [
+            // LOGO IMAGE
+            Image.asset(
+              'assets/logo_transparent.png',
+              width: 120,
+              height: 120,
+              fit: BoxFit.contain,
+            ),
+
+            const SizedBox(height: 20),
+            const Text(
               'Ibrahim Alhariri',
               style: TextStyle(
                 color: Colors.white,
